@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './LoginPage.css';
 
 const LoginPage = () => (
@@ -15,7 +16,9 @@ const LoginPage = () => (
           <button className="login-btn">Log In</button>
           <a href="/" className="forgot-password">Forgot Password?</a>
           <div className="divider"></div>
-          <button className="create-account-btn">Create New Account</button>
+          <Link to="/signup">
+            <button className="create-account-btn">Create New Account</button>
+          </Link>
         </div>
       </div>
     </div>
